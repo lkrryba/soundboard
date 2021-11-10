@@ -66,7 +66,3 @@ function render() {
 
 render()
 
-// function play(){
-//     new Audio("sounds/tada.mp3").play();
-// }
-
