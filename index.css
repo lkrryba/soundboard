@@ -1,0 +1,56 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+body,
+.container,
+.sound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    animation: shimmer 10s infinite linear alternate-reverse;
+    background: #c7b9ff;
+    background: linear-gradient(270deg, #aad1b6, #b5caf9, #c7b9ff, #f0b9dd, #f3bf99, #fffad1);
+    background-size: 1200px 100%;
+    max-width: 400px;
+    flex-wrap: wrap;
+    padding: 1em 0.5em;
+}
+
+.sound {
+    margin: 0.45em;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 50%;
+    padding: 40px;
+    cursor: pointer;
+    font-size: 2rem;
+    border: 3px solid orange;
+}
+
+.sound:hover,
+.sound:focus {
+    background-color: #ff66ff;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+
+.sound:active {
+    transform: scale(0.96);
+}
+
+@keyframes shimmer {
+  0%{background-position:50% 0%}
+  50%{background-position:28% 100%}
+  100%{background-position:100% 0%}
+}
